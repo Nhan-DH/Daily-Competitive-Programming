@@ -7,7 +7,8 @@ class Solution(object):
             while(cur > 0  ):
                 temp.append(cur%10)
                 cur = cur //10
-            answer.extend(temp[::-1])
+            temp.reverse()
+            answer.extend(temp)
         return answer
 
         
